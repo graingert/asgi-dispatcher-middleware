@@ -30,12 +30,13 @@
 
 from __future__ import generator_stop
 
+import sys
 from typing import Awaitable, Callable, Dict, Iterable, Optional, Tuple, Type, Union
 
-try:
+if sys.version_info >= (3, 8):
     from typing import Literal, Protocol, TypedDict
-except ImportError:
-    from typing_extensions import Literal, Protocol, TypedDict  # type: ignore
+else:
+    from typing_extensions import Literal, Protocol, TypedDict
 
 
 class ASGIVersions(TypedDict):

@@ -58,7 +58,7 @@ def _disambiguate_app(
 
 
 class DispatcherMiddleware:
-    def __init__(self, mounts: "dict[str, asgitypes.ASGIApplication]") -> None:
+    def __init__(self, mounts: typing.Dict[str, asgitypes.ASGIApplication]) -> None:
         self.mounts = mounts
 
     async def __call__(
