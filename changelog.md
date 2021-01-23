@@ -1,3 +1,3 @@
-## 0.0.0a3 (unreleased)
+## 1.0.0 (2021-01-23)
 
 - First release on PyPI

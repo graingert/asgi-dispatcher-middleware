@@ -8,4 +8,4 @@ from ._core import DispatcherMiddleware
 
 __all__ = ["DispatcherMiddleware"]
 
-__version__ = "0.0.0a3.dev0"
+__version__ = "1.0.0"
